@@ -11,7 +11,11 @@ class PageController extends Controller
         //welcome  
         return view('welcome');
     }
-
+    public function ciao()
+    {
+        //welcome  
+        return view('ciao');
+    }
     public function user($id)
     {
         //welcome  
