@@ -6,6 +6,12 @@ use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
+    public static function middleware(): array
+    {
+        return [
+            'auth',
+        ];
+    }
     public function welcome()
     {
         //welcome  

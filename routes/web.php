@@ -3,7 +3,8 @@
 use App\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
 //Rotta Statica
-Route::get('/', [PageController::class, 'welcome'])->name('welcome');
+
+Route::get('/', [PageController::class, 'welcome'])->name('welcome')->middleware(['verified']);
 Route::get('/ciao', [PageController::class, 'ciao'])->name('ciao');
 
 //Rotte Dinamiche
